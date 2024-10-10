@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#big2 {
+    height: 100vh;
+    text-align: center;
+    font-size: 75vh;
+    color: bisque;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 650;
+    overflow: hidden;
+    animation: big2 1s infinite;
+}
+
+#big2 img {
+    height: 75vh;
+    padding: 15px 0;
+}
+
+@keyframes big2 {
+    0% {
+        transform: scale(.6);
+    }
+    50% {
+        transform: scale(.9);
+    }
+    100% {
+        transform: scale(.6);
+    }
+}
+
+.hidden {
+    display: none;
+}

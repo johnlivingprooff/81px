@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.ii {
+    animation: fade 8s;
+    background: #777;
+    margin: 0;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.intro1 {
+    margin-top: -75px;
+    text-align: center;
+    color: antiquewhite;
+    font-style: italic;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 15px;
+    margin-bottom: 60px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.intro1:hover {
+    text-decoration: underline;
+}
+
+section {
+    height: 100vh;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(70px);
+        transition: all 0.5s ease;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sec-one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    animation: fade 1s;
+    opacity: 0;
+}
+
+.fade-in {
+    animation: fade-in 1s;
+    opacity: 1;
+}
+
+.sec-one h1 {
+    font-size: 6em;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 650;
+    margin-bottom: 20px;
+    grid-column: 1;
+}
+
+.sec-one p {
+    font-size: 1.2em;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.6em;
+    grid-column: 2;
+    padding: 75px 100px 0 100px;
+}
+
+.gold {
+    color: #a59611;
+}
+
+.sec-two {
+    background: url('../images/bg-one.png');
+}

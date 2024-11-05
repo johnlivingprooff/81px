@@ -4,6 +4,8 @@ import BigII from '../components/BigII';
 import HomeHero from '../components/HomeHero';
 import '../styles/Home.css';
 import Helmet from 'react-helmet'
+import Projects from '../components/Projects';
+import ScrollSection from '../components/ScrollSect';
 
 function Home () {
   const [isVisible, setIsVisible] = useState(true);
@@ -80,7 +82,10 @@ function Home () {
         </p>
       </section>
       <section className='sec-two'>
-        Service Sect
+        <Projects />
+      </section>
+      <section>
+        <ScrollSection />
       </section>
     </div>
   );

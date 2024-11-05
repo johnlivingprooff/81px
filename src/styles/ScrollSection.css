@@ -1,0 +1,27 @@
+/* Vertical scroll area */
+.vertical-scroll {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+/* Horizontal scrolling container */
+.horizontal-container {
+    display: flex;
+    gap: 1rem;
+    height: 100vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory; /* Smooth snapping for horizontal scroll */
+}
+
+/* Individual cards */
+.card {
+    scroll-snap-align: start;
+    min-width: 80vw;
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

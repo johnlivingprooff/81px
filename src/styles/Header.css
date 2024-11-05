@@ -36,6 +36,13 @@ nav div {
     font-family: "Afacad Flux", sans-serif;
     font-size: 1.4em;
     text-align: center;
+    padding: 10px 25px;
+    transition: all 0.3s;
+}
+
+nav div:hover {
+    background: #eacf2063;
+    cursor: pointer;
 }
 
 nav button {
@@ -43,7 +50,7 @@ nav button {
     backdrop-filter: blur(10px);
     padding: 15px;
     border: none;
-    border-radius: 50px;
+    border-radius: 5px;
     color: #fff;
     cursor: pointer;
     transition: all 0.3s;

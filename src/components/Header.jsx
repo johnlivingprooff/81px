@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Header.css";
 import logo from "../images/gold-81.png";
+import { Link } from "react-router-dom";
 
 function Header() {
     const [isSticky, setIsSticky] = useState(false);
@@ -21,15 +22,16 @@ function Header() {
 
     return (
         <header className={isSticky ? "sticky" : ""} id="sticky-header">
-            <img src={logo} alt="logo" id="logo"/>
+            <Link to={'/'} className="logo">
+                <img src={logo} alt="logo" id="logo"/>
+            </Link>
             <nav>
-                <div>Home</div>
-                <div>Services</div>
-                <div>About</div>
-                <div>Work</div>
-                <div>Contact</div>
-                <div>Learn</div>
-                <button>Call To Action</button>
+                <a href="/" className="h-links">Home</a>
+                <a href="/service" className="h-links">Services</a>
+                <a href="#about" className="h-links">About</a>
+                <a href="#projects" className="h-links">Work</a>
+                <a href="/school" className="h-links">Learn</a>
+                <button><a href="#contact">Contact Us</a></button>
             </nav>
         </header>
     );

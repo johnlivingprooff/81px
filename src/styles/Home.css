@@ -4,6 +4,7 @@
     animation: fade 8s;
     background: #777;
     margin: 0;
+    height: 80vh;
 }
 
 @keyframes fade {
@@ -16,17 +17,18 @@
 }
 
 .intro1 {
-    margin-top: -75px;
     text-align: center;
     color: antiquewhite;
     font-style: italic;
     font-family: "Afacad Flux", sans-serif;
     font-size: 15px;
-    margin-bottom: 60px;
     display: grid;
     place-items: center;
     width: 100%;
     text-decoration: none;
+    padding: 20px 0;
+    margin-bottom: 60px;
+    margin-top: -140px;
 }
 
 .intro1:hover {
@@ -83,8 +85,4 @@ section {
 
 .gold {
     color: #a59611;
-}
-
-.sec-two {
-    background: url('../images/bg-one.png');
 }

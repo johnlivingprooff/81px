@@ -4,12 +4,13 @@
   place-items: center;
   position: relative;
   height: 100vh;
+  background: url('../images/bg-one.png');
 }
 
 .boxes {
-    background-color: rgba(255, 255, 0, 0.085);
-    width: 85%;
-    height: 75vh;
+    /* background-color: rgba(255, 255, 0, 0.085); */
+    width: 71vw;
+    height: 80vh;
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
@@ -19,11 +20,12 @@
 
 .box {
     position: absolute;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     transform: translateY(20px); /* initial offset for effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .box.active {
@@ -32,8 +34,25 @@
 }
 
 /* Unique styling for each box (add colors or backgrounds) */
-.box0 { background-color: #ffadad; }
-.box1 { background-color: #ffd6a5; }
-.box2 { background-color: #fdffb6; }
-.box3 { background-color: #caffbf; }
-.box4 { background-color: #9bf6ff; }
+.box0 { background-image:  url(../images/projects/1.png); background-position: fit; background-repeat:no-repeat; background-size: contain;}
+.box1 { background-image:  url(../images/projects/2.png); background-position: fit; background-repeat:no-repeat; background-size: contain;}
+.box3 { background-image:  url(../images/projects/4.png); background-position: fit; background-repeat:no-repeat; background-size: contain;}
+.box2 { background-image:  url(../images/projects/3.png); background-position: fit; background-repeat:no-repeat; background-size: contain;}
+
+.staybg {
+    position: absolute;
+    font-size: 25rem;
+    color: rgba(250, 235, 215, 0.225);
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+}
+
+.one {
+    margin-top: 270px;
+}
+
+.web {
+    margin-top: -150px;
+}

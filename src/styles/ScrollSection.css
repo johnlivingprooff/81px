@@ -1,27 +1,20 @@
-/* Vertical scroll area */
-.vertical-scroll {
-    height: 100vh;
-    overflow-y: scroll;
-}
-
-/* Horizontal scrolling container */
-.horizontal-container {
+.horizontal-scroll-section {
     display: flex;
+    overflow-x: auto; /* Allows x-axis scrolling */
     gap: 1rem;
     height: 100vh;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory; /* Smooth snapping for horizontal scroll */
+    scroll-snap-type: x mandatory;
+    position: relative;
+    background: yellowgreen;
 }
 
-/* Individual cards */
 .card {
     scroll-snap-align: start;
     min-width: 80vw;
-    background-color: #f0f0f0;
     padding: 2rem;
+    background-color: #f0f0f0;
     border-radius: 8px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
